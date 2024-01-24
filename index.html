@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@300;400;500;600;700&family=Lemon&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Food Recipe || 3.0</title>
+  </head>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg bg-white border-bottom border-success-subtle"
+    >
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">Food Reci</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="dropend" id="dropdend">
+              <button
+                type="button"
+                class="btn btn-success dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li class="dropdown-item" data-category="Beef">Beef</li>
+                <li class="dropdown-item" data-category="Chicken">Chicken</li>
+                <li class="dropdown-item" data-category="Pork">Pork</li>
+                <li class="dropdown-item" data-category="Lamb">Lamb</li>
+                <li class="dropdown-item" data-category="Dessert">Dessert</li>
+                <li class="dropdown-item" data-category="Pasta">Pasta</li>
+                <li class="dropdown-item" data-category="Miscellaneous">
+                  Miscellaneous
+                </li>
+                <li class="dropdown-item" data-category="Seafood">SeaFood</li>
+                <li class="dropdown-item" data-category="Vegan">Vegan</li>
+                <li class="dropdown-item" data-category="Vegetarian">
+                  Vegetarian
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search d-flex">
+            <input
+              id="searchInput"
+              type="text"
+              class="me-2 p-1"
+              placeholder="Enter an ingredient..."
+            />
+            <button id="searchButton" type="button" class="btn btn-success">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="cover">
+      <h1>What are your favorite cuisines?</h1>
+      <p>PERSONALIZE YOUR EXPERIENCE</p>
+    </div>
+    <div class="back p-4 container-xxl">
+      <div class="details border border-success-subtle p-4 bg-white w-full h-3">
+        <button id="recipeCloseBtn" class="close-button">&times;</button>
+        <div class="meal-details-content"></div>
+      </div>
+    </div>
+    <div class="bg-white border border-success-subtle">
+        <div class="title p-4">
+            <h1 id="title"></h1>
+        </div>
+        <div
+        id="mealList"
+        class="meal-list"
+        >
+        </div>
+    </div>
+    <div class="categories p-5" id="categoriesList">
+
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
